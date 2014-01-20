@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- 
+ 
+ You should not have to modify this file.
+
+ You should just complete the stub in regex.js 
+
+ -->
+
+
+ <head>
+  <title>Regex Implementation Project :: UID uXXXXXXX</title> 
+
+  <style>
+span.matching {
+  color: green ;
+}
+
+span.nomatching {
+  color: red ;
+}
+  </style>
+
+ </head>
+
+
+ <body>
+
+   Name: <em>Your name here</em>
+   <br />
+
+   UNID: <em>Your UID here</em>
+   <br />
+
+
+   RegEx:
+   <input type="text" id="regex" onkeyup="validate()" />
+
+   <br />
+
+   String:
+   <input type="text" id="string" onkeyup="validate()" />
+
+   <br />
+
+   <span class="matching" id="matches"></span>
+
+
+  <script src="regex.js">
+  </script>
+
+  <script>
+var regexElement = document.getElementById("regex") ;
+
+var stringElement = document.getElementById("string") ;
+
+var matchesElement = document.getElementById("matches") ;
+
+function validate() {
+
+  var regex = regexElement.value.toString() ;
+
+  var text = stringElement.value.toString() ;
+
+  if (dregex_match(regex,text)) {
+    matchesElement.className = "matching" ;
+    matchesElement.innerHTML = "MATCH" ;
+  } else {
+    matchesElement.className = "notmatching" ;
+    matchesElement.innerHTML = "NO MATCH" ;
+  }
+
+}
+
+  </script>
+
+ </body>
+
+</html>

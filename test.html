@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- 
+ 
+ You should not have to modify this file.
+
+ You should just complete the stub in regex.js 
+
+ -->
+
+
+ <head>
+  <title>A regex test suite</title> 
+
+  <style>
+span.correct {
+  color: green ;
+  font-weight: bold;
+}
+
+span.incorrect {
+  color: red ;
+  font-weight: bold;
+}
+  </style>
+
+ </head>
+
+
+ <body>
+
+
+  <script src="regex.js">
+  </script>
+
+  <script src="tests.js">
+  </script>
+
+
+<script>
+
+var Tests = 0;
+var Passed = 0;
+var Failed = 0 ;
+
+function run_test(regex,string,expected) {
+
+  var dresult = dregex_match(regex,string) ;
+
+  Tests++ ;
+
+  regex = "<code>"+regex+"</code>" ;
+  string = "<code>"+string+"</code>" ;
+ 
+  if (dresult == expected) {
+    document.writeln("<span class=\"correct\">Correct</span>: " + regex +
+                     (expected ? " matched " : " did not match ") + 
+                     string) ;
+    Passed++ ;
+  } else {
+    document.writeln("<span class=\"incorrect\">Incorrect</span>: " + regex +
+                     (expected ? " should have matched " : " should not have matched ") + 
+                     string) ;
+    Failed++ ;
+  }
+
+  document.writeln("<br />") ;
+}
+
+
+function run_tests() {
+  for (var i = 0; i < RegexTests.length; i++) {
+    var test = RegexTests[i];
+    run_test(test[0], test[1], test[2]) ;
+  }
+  
+  document.writeln("<hr />") ;
+  
+  document.writeln("<b>Student ID</b>: " + StudentID + "<br />") ;
+  
+  document.writeln("<b>Name</b>: " + FirstName + " " + LastName + "<br />") ;
+  
+  document.writeln("<b>Score</b>: " + Passed + " / " + Tests + "<br />") ;
+}
+
+
+run_tests() ;
+</script>
+
+ </body>
+
+</html>
