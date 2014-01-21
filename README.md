@@ -66,31 +66,6 @@ Manifest
 
 
 
-Turnin
-------
-
-To turn in this project, submit a URL from your public html directory on the
-clas server to this file.
-
-To prevent your assignment from being copied, place it it the subdirectory
-`~/public_html/p2/`.
-
-Then, disable public reads of this directory, while allowing public execution:
-
-    chmod o-r $HOME/public_html/p2
-    chmod o+x $HOME/public_html
-   
-
-Directories with incorrect permissions set will receive an automatic 0.
-
-Rename template.html to a random filename (ending in .html), e.g., 1701.html
-
-The filename must have at least 20 characters.
-
-Then, email [the instructor] the link.
-   
-
-
 [regular expressions]: http://matt.might.net/articles/sculpting-text/
 
 [Brzozowski's derivative]: http://matt.might.net/articles/implementation-of-regular-expression-matching-in-scheme-with-derivatives/
