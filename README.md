@@ -44,6 +44,9 @@ To aid the suite testing, your page should export the function
 Pointers
 --------
 
+* [Firebug] is a great extension for interactively debugging JavaScript.
+
+
 * For an implementation of regular expressions with derivatives in Java,
   see the [slides on lexing].
 
@@ -59,10 +62,13 @@ Pointers
 Manifest
 --------
 
-* `regex.js`: Modify this file to complete the assignment.
-* `test.html`: Open this file to run a battery of provided tests.
-* `tests.js`: A database of tests for `test.html`.
-* `index.html`: An interactive interface for testing `regex.js`.
+* `Makefile`:     Run tests with `make test`.
+* `regex.js`:     Modify this file to complete the assignment.
+* `tests.js`:     A database of tests.
+* `test.html`:    A web page that runs the tests in `tests.js` in the browser.
+* `node-test.js`: A node.js program that runs the tests in `tests.js` 
+                  at the console.
+* `index.html`:   An interactive interface for testing `regex.js`.
 
 
 
@@ -77,3 +83,5 @@ Manifest
 [regular expressions with derivatives in Scheme]: http://matt.might.net/articles/implementation-of-regular-expression-matching-in-scheme-with-derivatives/
 
 [parsing regular expressions with recursive descent]: http://matt.might.net/articles/parsing-regex-with-recursive-descent/
+
+[Firebug]: https://getfirebug.com/
