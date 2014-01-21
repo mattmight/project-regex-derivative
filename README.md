@@ -46,14 +46,13 @@ Pointers
 
 * [Firebug] is a great extension for interactively debugging JavaScript.
 
+* [Node.js] lets you run JavaScript at the console (among other features).
 
 * For an implementation of regular expressions with derivatives in Java,
   see the [slides on lexing].
 
-
 * An implementation of [regular expressions with derivatives in Scheme]
   covers the basic theory of derivatives of regular expressions.
-  
 
 * An implementation of [parsing regular expressions with recursive descent]
   in Java is available on the blog.
@@ -85,3 +84,5 @@ Manifest
 [parsing regular expressions with recursive descent]: http://matt.might.net/articles/parsing-regex-with-recursive-descent/
 
 [Firebug]: https://getfirebug.com/
+
+[Node.js]: http://nodejs.org/
