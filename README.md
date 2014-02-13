@@ -70,6 +70,16 @@ Manifest
 * `index.html`:   An interactive interface for testing `regex.js`.
 
 
+Testing
+-------
+
+The file `tests.js` contains a test suite.
+
+If nodejs is installed, you can run the test suite against your current
+implementation with `make test`.
+
+Without nodejs, you can open `test.html` in a browser to run the test suite.
+
 
 [regular expressions]: http://matt.might.net/articles/sculpting-text/
 
