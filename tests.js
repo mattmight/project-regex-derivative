@@ -29,4 +29,17 @@ var RegexTests =
 
  , ["ab~((b|a|0|1)*ba(b|a|0|1)*)ba", "abbaba", false]
 
+
+ // Tricky cases:
+ , ["abc|","",true]
+ , ["abc|","abc",true]
+ , ["|","",true]
+ , ["&","",true]
+ , ["&e","",false]
+ , ["~foo","ffoo",true]
+ , ["~foo","aoo",true]
+ , ["~foo","foo",false]
+ , ["~foo","oo",true]
+
+
  ] ;
