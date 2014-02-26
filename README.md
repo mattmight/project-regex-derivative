@@ -16,12 +16,19 @@ The EBNF grammar of regular expressions is:
     <factor> ::= <base> { '*' }
     <base>   ::= [ '~' ] <atom>
     <atom>   ::= '\' <char>
-              |  <char>
+              |  <not-special-char>
               |  '(' <regex> ')'
    
 
 In this special dialect of regex, the operator `~` is complement (or negation)
 and the operator `&` is intersection (or and). 
+
+The non-terminal `<char>` is any character, while the non-terminal
+`<not-special-char>` is any character except for `(`, `)`, `|`, `*`, `~` or
+`\`.
+
+
+   
 
 
 Requirements
